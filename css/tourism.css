@@ -1,0 +1,490 @@
+/* scrollbar */
+html{
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+    width: 10px;
+}
+  *::-webkit-scrollbar-track {
+    background: #181818;
+    border-radius: 10px; 
+    opacity: 0.5;
+}
+  *::-webkit-scrollbar-thumb {
+    background-color: #DC3545;
+    border-radius: 20px;
+    border: 2px solid #181818;
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    transition: .15s ease-in-out;
+}
+body{
+    position: relative;
+    font-family: Calibri;
+}
+.main{
+    position: relative;
+}
+/* scroll ends */
+
+.tourism-nav{
+    background: rgba(255, 255, 255, 0.4);
+}
+.nav-tabs {
+    border-bottom: 0px;
+}
+.nav-tabs .nav-item:hover .nav-link{
+    color: #fff !important;
+    border-color: transparent;
+}
+.search{
+    background-color:  rgba(255, 255, 255, 0.5);
+    border: 0;
+}
+.search:focus {
+    background-color:  rgba(255, 255, 255, 0.7) !important;
+}
+.nav-item .nav-link{
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav-pills .nav-item .active.nav-link{
+    background: transparent !important;
+    border-color: transparent;
+    color: #DC3545 !important;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.logo{
+    height:50px !important;
+}
+
+/* navbar end */
+/* carousel */
+.carousel{
+    padding: 0 !important;
+    max-height: 100vh !important;
+    overflow-y: hidden;
+}
+.carousel-controllers{
+    position: absolute !important;
+    padding: 0 !important;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 40%;
+}
+.carousel-controllers ul{
+    justify-content: right !important;
+    justify-items: right !important;
+    padding-bottom: 10%;
+    /* padding: 0 !important; */
+}
+.carousel-controllers ul li{
+    opacity: 1 !important;
+}
+.my-indicators{
+    position: absolute;
+    top: 47.5%;
+    bottom: 0;
+    left: -15% !important;
+    right: 50%;
+}
+.my-indicators li{
+    height: 5px;
+    width: 50px;
+}
+.amsterdam{
+    height: 100px !important;
+    width: 150px !important;
+    background-image: url(../img/amsterdam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px !important;
+}
+.singapore{
+    height: 100px !important;
+    width: 150px !important;
+    background-image: url(../img/singapore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px !important;
+
+}
+.new-york{
+    height: 100px !important;
+    width: 150px !important;
+    background-image: url(../img/new-york.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px !important;
+}
+.prague{
+    height: 100px !important;
+    width: 150px !important;
+    background-image: url(../img/prague.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px !important;
+}
+.rome{
+    height: 100px !important;
+    width: 150px !important;
+    background-image: url(../img/rome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px !important;
+}
+.carousel-indicators li{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.carousel-indicators li.active{
+    opacity: 1 !important;
+
+}
+.caption-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: black;
+    background-color: rgba(94,142,190, 0.5);
+}
+button{
+    cursor: pointer !important;
+}
+.amsterdam-letter{
+    background-image: url(../img/amsterdam.jpg) ;
+}
+.carousel-caption{
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 7% !important;
+    right: 50%;
+    text-align: left !important;
+    align-content: flex-start;
+}
+.carousel-caption h1{
+    /* font-family: Bradley Hand, cursive; */
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+.carousel-caption-specs{
+    opacity: 1 !important;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 7% !important;
+    right: 0%;
+    color: #fff;
+}
+.carousel-caption-specs p{
+    opacity: 1 !important;
+}
+/* about section */
+
+.about{
+    border-radius: 50px;
+    width: 75%;
+    min-height: auto;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    /* bottom: -100%; */
+    top: -200%;
+    box-shadow: 2px 2px 5px #666;
+}
+
+.info-center:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 110%;
+    bottom: 0;
+    height: 5px;
+    width: 50%;
+    background-color: #DC3545;
+    border-radius: 2px;
+}
+.info-img{
+    height: 50px;
+    width: 50px;
+}
+.info-col{
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.info-col:hover{
+    border-bottom-color: #fff !important;
+    border-right-color: #fff !important;
+    box-shadow: 4px 4px 5px #666;
+}
+.info-specs{
+    opacity: 1;
+    font-weight: 500;
+    color: #555;
+}
+.pricing-sec{
+    padding-top: 20%;
+    background-image: url(../img/bg-vid.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.get-lost h1{
+    font-weight: bold;
+}
+.get-lost p{
+    color: #666 !important;
+    font-weight: 500;
+    opacity: 1 !important;
+}
+.get-lost button{
+    opacity: 1 !important;
+}
+.vid-img-overlay{
+    cursor: pointer;
+    /* top: 0; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: bottom;
+    align-content: flex-end;
+    justify-content: bottom;
+    vertical-align: bottom;
+    color: #fff;
+}
+.vid-img-overlay h4{
+    color: #DC3545;
+    font-family: Brush Script MT, CURSIVE;
+}
+.vid-img-overlay h1{
+    font-size: 15vw;
+    color: #DC3545;
+    font-family: Brush Script MT, CURSIVE;
+}
+.vid-img-overlay h5{
+    font-size: 5vw;
+    color: #fff;
+    font-family: Brush Script MT, CURSIVE;
+}
+.vid-play{
+    opacity: 0.8;
+    height: 50px;
+    transition: 0.1s ;
+}
+.vid-img-overlay:hover .vid-play{
+    opacity: 1;
+}
+
+.card{
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.card-img-overlay h3{
+    transition: 0.2s;
+    bottom: 0;
+    left:0;
+}
+.card-img-overlay{
+    transition: 0.2s;
+    color: #fff;
+    background-color: rgba(34,34,34, 0);
+    text-align: left;
+    vertical-align: bottom;
+}
+.card-img-overlay h5{
+    vertical-align: bottom;
+}
+.card-img{
+    transition: 0.4s;
+}
+.card-img-overlay h2,
+.card-img-overlay p,
+.card-img-overlay button{
+    opacity: 0;
+    transition: 0.4s;
+}
+.card:hover .card-img{
+    transform: scale(1.15);
+}
+.card:hover .card-img-overlay{
+    background-color: rgba(34,34,34, 0.4);
+}
+.card:hover .card-img-overlay h3{
+    color: #DC3545;
+}
+.card:hover .card-img-overlay h2,
+.card:hover .card-img-overlay p,
+.card:hover .card-img-overlay button{
+    opacity: 1;
+}
+
+/* trip typs */
+.trip-type{
+    background-image:linear-gradient(-45deg, rgba(34,34,34,0.5), rgba(34,34,34,0.5)), url(../img/bg_3.jpg);
+    background-image:-webkit-linear-gradient(-45deg, rgba(34,34,34,0.5), rgba(34,34,34,0.5)), url(../img/bg_3.jpg);
+    background-image:-moz-linear-gradient(-45deg, rgba(34,34,34,0.5), rgba(34,34,34,0.5)), url(../img/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.trip-header{
+    position: relative;
+    color: #fff;
+}
+.trip-header:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 40%;
+    top: 110%;
+    bottom: 0;
+    height: 5px;
+    width: 20%;
+    background-color: #DC3545;
+    border-radius: 2px;
+}
+.type{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: 0.3s;
+    margin: 0;
+    /* overflow: hidden; */
+}
+.type:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px #555;
+}
+.type h2{
+    transition: 0.3s;
+    font-weight: 500;
+}
+.type:hover.type h2{
+    font-weight: 500;
+    color: #DC3545;
+}
+.type img{
+    height: 100px;
+}
+.type p{
+    padding: 0;
+    opacity: 1;
+    color: #eee;
+}
+.offer-sec{
+    background-image: url(../img/bg-vid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* contacts */
+.contact-header{
+    font-weight: bold;
+}
+.contact-header:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 45%;
+    top: 110%;
+    bottom: 0;
+    height: 5px;
+    width: 10%;
+    background-color: #DC3545;
+    border-radius: 2px;
+}
+.map{
+    background-image:linear-gradient(-45deg, rgba(34,34,34,0.2), rgba(34,34,34,0.2)), url(../img/map_2.png);
+    background-image:-webkit-linear-gradient(-45deg, rgba(34,34,34,0.2), rgba(34,34,34,0.2)), url(../img/map_2.png);
+    background-image:-moz-linear-gradient(-45deg, rgba(34,34,34,0.2), rgba(34,34,34,0.2)), url(../img/map_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+.rocket{
+    width: 200px;
+}
+input,
+textarea{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+input:focus, textarea:focus {
+    background-color:  rgba(255, 255, 255, 0.7) !important;
+    outline-color: #DC3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69, 0.25) !important;
+    border-color:  rgba(220,53,69, 0.7) !important;
+}
+@media only screen and (max-width: 1200px){
+    .my-indicators{
+        display: none;
+        visibility: hidden;
+    }
+    .about{
+        position: relative;
+        
+    }
+    .serv{
+        padding-top: 5% !important;
+        padding-bottom: 0 !important;
+        margin: 0 !important;
+    }
+    .pricing-sec{
+        padding-top: 5%;
+    }
+    .get-lost{
+        padding: 10% 0 !important;
+    }
+    .tourism-nav{
+        background-color: #839DC1 !important;
+    }
+}
+@media only screen and (max-width: 1201px){
+    .my-indicators{
+        position: absolute;
+        top: 36%;
+        bottom: 0;
+        left: -15% !important;
+        right: 50%;
+    }
+    .tur-places{
+        padding-top:3.5px !important;
+        padding-bottom:0 !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    .carousel-controllers{
+        display: none;
+        visibility: hidden;
+    }
+    .carousel-caption-specs{
+        width: 90% !important;
+    }
+    .carousel-caption-specs button{
+        display: none;
+    }
+}
