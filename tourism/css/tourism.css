@@ -54,12 +54,16 @@ body{
     font-weight: 500;
     text-transform: uppercase;
 }
+.nav-pills .nav-item .active{
+    background: transparent !important;
+    border-color: transparent;
+    color: #DC3545 !important;
+}
 .nav-pills .nav-item .active.nav-link{
     background: transparent !important;
     border-color: transparent;
     color: #DC3545 !important;
 }
-
 .navbar-brand{
     text-transform: uppercase;
     font-weight: 500;

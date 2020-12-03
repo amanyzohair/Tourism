@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/flaticon.css">
         <link rel="stylesheet" href="css/tourism.css">
     </head>
-    <body data-spy="scroll" data-target=".navbar-nav">
+    <body data-spy="scroll" data-target="#navbar-nav">
           <!-- navbar starts here -->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top tourism-nav" id="navbar" #navbar>
                 <a class="navbar-brand py-0 pl-2" href="#contact">
@@ -457,12 +457,20 @@
           </div>
         </section>
         
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.1/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.1.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
         <script src="js/aos.js"  async defer></script>
+        <script src="js/fontawesome.js" async defer></script>
         <script src="js/bootstrap.js" async defer></script>
         <script src="js/popper.min.js" async defer></script>
         <script src="js/jquery.min.js"  async defer></script>
-        <script src="js/fontawesome.js" async defer></script>
         <script src="js/tourism.js"  async defer></script>
         <script>
             AOS.init();
