@@ -1,6 +1,9 @@
 /* scrollbar */
 html{
     scroll-behavior: smooth;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
 }
 *::-webkit-scrollbar {
     width: 10px;
@@ -25,6 +28,9 @@ html{
 body{
     position: relative;
     font-family: Calibri;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
 }
 .main{
     position: relative;

@@ -1,7 +1,10 @@
+// refresh AOS on load
 
 AOS.init({
   startEvent: 'load',
 });
+
+// Change navbar background color on scroll
 
 window.onscroll = function() {scrollFunction()};
 
@@ -15,8 +18,9 @@ function scrollFunction() {
   }
 };
 
-var carouselContainer = $('.carousel');
+// stop pausing on hover
 
+var carouselContainer = $('.carousel');
 $('.carousel').carousel({
     pause: "false"
 });
